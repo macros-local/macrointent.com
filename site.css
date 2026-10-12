@@ -1,0 +1,97 @@
+/* macrointent.com: the app's colours and type (meals-web-ui index.html :root) */
+:root{
+  --ground:#F8F6FC; --surface:#FFFFFF; --sunken:#F3F0FA; --track:#ECE8F4;
+  --ink:#2D2838; --muted:#736B84; --rule:#E9E5F1;
+  --accent:#6B58A8; --fill:#C4B5F2; --fill-ink:#2A1B5C; --tint:#ECE7FB;
+  --mp:#86D0A6; --mc:#9DB6EE; --mf:#F3CF63; --mkcal:#B9A7EC;
+  --shadow:0 1px 2px rgba(32,34,31,.05), 0 8px 28px rgba(32,34,31,.08);
+  --ui:"Archivo","Helvetica Neue",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){
+  --ground:#17151C; --surface:#1F1C26; --sunken:#26222F; --track:#322D3D;
+  --ink:#EEEAF6; --muted:#A59DB5; --rule:#2C2836;
+  --accent:#C4B5F2; --fill:#B9A7EC; --fill-ink:#1E1636; --tint:#2A2440;
+  --mp:#8FDAB3; --mc:#A9C0F2; --mf:#F6D77C; --mkcal:#C4B5F2;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 28px rgba(0,0,0,.35);
+}}
+:root[data-theme=dark]{
+  --ground:#17151C; --surface:#1F1C26; --sunken:#26222F; --track:#322D3D;
+  --ink:#EEEAF6; --muted:#A59DB5; --rule:#2C2836;
+  --accent:#C4B5F2; --fill:#B9A7EC; --fill-ink:#1E1636; --tint:#2A2440;
+  --mp:#8FDAB3; --mc:#A9C0F2; --mf:#F6D77C; --mkcal:#C4B5F2;
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ground);color:var(--ink);font:16px/1.6 var(--ui)}
+a{color:var(--accent)}
+img{max-width:100%}
+
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:20px 0}
+.brand{display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font-weight:700;font-size:18px}
+.brand img{width:36px;height:36px;border-radius:10px}
+.top nav{display:flex;gap:18px;align-items:center;font-size:15px}
+.top nav a{color:var(--muted);text-decoration:none}
+.top nav a:hover{color:var(--ink)}
+
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:999px;font-weight:600;
+  text-decoration:none;font-size:16px;border:1px solid transparent}
+.btn.primary{background:var(--fill);color:var(--fill-ink)}
+.btn.primary:hover{filter:brightness(.97)}
+.btn.ghost{border-color:var(--rule);color:var(--ink);background:var(--surface)}
+.top .btn{padding:8px 16px;font-size:15px}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;padding:48px 0 72px}
+.hero h1{font-size:clamp(36px,6vw,58px);line-height:1.05;letter-spacing:-.02em;margin:0 0 18px;font-stretch:92%}
+.hero p.lede{font-size:19px;color:var(--muted);margin:0 0 28px;max-width:34em}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.soon{font-size:14px;color:var(--muted);margin-top:14px}
+
+/* the day card: a sketch of the app's Week screen */
+.day{background:var(--surface);border:1px solid var(--rule);border-radius:22px;box-shadow:var(--shadow);padding:20px}
+.dayhead{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:14px}
+.dayhead b{font-size:17px}
+.dayhead span{font-size:13px;color:var(--muted)}
+.rings{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:16px}
+.ring{text-align:center;font-size:12px;color:var(--muted)}
+.ring svg{width:100%;max-width:64px;display:block;margin:0 auto 4px}
+.ring b{display:block;color:var(--ink);font-size:14px}
+.meal{display:flex;justify-content:space-between;align-items:center;padding:10px 12px;border-radius:12px;background:var(--sunken);margin-top:8px;font-size:14px}
+.meal small{display:block;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+.meal .kc{color:var(--muted);font-variant-numeric:tabular-nums}
+
+/* features */
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding-bottom:72px}
+.feature{background:var(--surface);border:1px solid var(--rule);border-radius:16px;padding:22px}
+.feature .ic{width:40px;height:40px;border-radius:12px;background:var(--tint);display:grid;place-items:center;margin-bottom:12px}
+.feature .ic svg{width:22px;height:22px;stroke:var(--accent);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.feature h3{margin:0 0 6px;font-size:17px}
+.feature p{margin:0;color:var(--muted);font-size:15px}
+
+.band{background:var(--tint);border-radius:24px;padding:40px 28px;text-align:center;margin-bottom:72px}
+.band h2{margin:0 0 8px;font-size:clamp(24px,4vw,32px)}
+.band p{margin:0 auto 22px;color:var(--muted);max-width:36em}
+
+footer{border-top:1px solid var(--rule);padding:28px 0 40px;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer nav{display:flex;gap:18px;flex-wrap:wrap}
+footer a{color:var(--muted)}
+
+/* privacy and deletion pages */
+.doc{max-width:720px;margin:0 auto;padding:16px 16px 64px}
+.doc h1{font-size:clamp(28px,5vw,36px);line-height:1.15;margin:12px 0 4px}
+.doc h2{font-size:19px;margin:34px 0 8px}
+.doc .date{color:var(--muted);margin:0 0 24px}
+.doc li{margin:6px 0}
+.doc table{width:100%;border-collapse:collapse;font-size:15px;background:var(--surface);border:1px solid var(--rule)}
+.doc th,.doc td{text-align:left;vertical-align:top;padding:10px 12px;border-top:1px solid var(--rule)}
+.doc th{background:var(--sunken);border-top:0}
+.doc .tablewrap{overflow-x:auto;border-radius:12px}
+
+@media (max-width:820px){
+  .hero{grid-template-columns:1fr;gap:36px;padding:24px 0 56px}
+  .features{grid-template-columns:1fr}
+  .top nav a:not(.btn){display:none}
+}
