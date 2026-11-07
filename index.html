@@ -3,60 +3,193 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Macro Intent — meal plans that hit your macros</title>
-<meta name="description" content="Macro Intent plans your week of meals around your calorie and protein targets, then gives you the grocery list and prep plan.">
-<link rel="icon" type="image/svg+xml" href="/brand/logo.svg">
-<link rel="apple-touch-icon" href="/brand/logo.png">
+<title>Macro Intent — eat with intent</title>
+<meta name="description" content="Macro Intent plans your week of meals around your calorie and protein targets, logs what you eat from a photo or a sentence, and turns your Pinterest boards into recipes that fit.">
+<meta property="og:title" content="Macro Intent — eat with intent">
+<meta property="og:description" content="A week of meals that hits your macros, logged from a photo or a sentence, with your Pinterest recipes and your coach along for the ride.">
+<meta property="og:image" content="https://macrointent.com/brand/icon-512.png">
+<meta name="theme-color" content="#F8F6FC">
+<link rel="icon" type="image/png" href="/brand/favicon-64.png">
+<link rel="apple-touch-icon" href="/brand/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Outfit:wght@300;400;500;600;700&display=swap">
 <link rel="stylesheet" href="/site.css">
 </head>
 <body>
 <header class="wrap top">
-  <a class="brand" href="/"><img src="/brand/logo.svg" alt="">Macro Intent</a>
-  <nav><a href="/#features">Features</a><a href="/privacy">Privacy</a><a class="btn primary" href="https://app.macrointent.com">Open the app</a></nav>
+  <a class="wordmark" href="/" aria-label="Macro Intent"><span class="bw">macro</span><span class="bi">intent<svg viewBox="0 0 100 8" preserveAspectRatio="none" aria-hidden="true"><path d="M3 5.5 Q50 1 97 5.5"/></svg></span></a>
+  <nav><a href="#log">Logging</a><a href="#features">Features</a><a href="#new">What’s new</a><a class="btn primary" href="https://app.macrointent.com">Open the app</a></nav>
 </header>
-<main class="wrap">
-  <section class="hero">
-    <div>
-      <h1>Meals that hit your macros, planned for you.</h1>
-      <p class="lede">Set your calorie and protein targets once. Macro Intent builds each day from recipes you like and the foods you buy, scaling every portion so the numbers add up. Then it hands you the grocery list and the prep plan.</p>
-      <div class="ctas">
-        <a class="btn primary" href="https://app.macrointent.com">Start planning, free</a>
-        <a class="btn ghost" href="#features">How it works</a>
+
+<main>
+  <div class="wrap">
+    <section class="hero" style="padding-top:28px">
+      <div>
+        <a class="eyebrow" href="#new"><b>NEW</b> Pinterest boards become recipes</a>
+        <h1>Eat with <em>intent</em>.<br>Hit your macros without the maths.</h1>
+        <p class="lede">Set your calorie and protein targets once. Macro Intent plans a week of meals you like, scales every portion so the numbers add up, and turns it into a grocery list and a prep plan. Log the rest from a photo or a sentence.</p>
+        <div class="ctas">
+          <a class="btn primary" href="https://app.macrointent.com">Start planning, free</a>
+          <a class="btn ghost" href="#features">See how it works</a>
+        </div>
+        <p class="soon"><i></i>On the web now · iPhone and Android apps in testing</p>
       </div>
-      <p class="soon">On the web now. iPhone and Android apps are in testing.</p>
-    </div>
-    <div class="day" aria-label="A planned day in Macro Intent">
-      <div class="dayhead"><b>Tuesday</b><span>All three on target</span></div>
-      <div class="rings"><div class="ring"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="26" fill="none" stroke="var(--track)" stroke-width="7"/><circle cx="32" cy="32" r="26" fill="none" stroke="var(--mkcal)" stroke-width="7" stroke-linecap="round" stroke-dasharray="156.8 163.36" transform="rotate(-90 32 32)"/></svg><b>1,940</b>kcal</div><div class="ring"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="26" fill="none" stroke="var(--track)" stroke-width="7"/><circle cx="32" cy="32" r="26" fill="none" stroke="var(--mp)" stroke-width="7" stroke-linecap="round" stroke-dasharray="161.7 163.36" transform="rotate(-90 32 32)"/></svg><b>162g</b>protein</div><div class="ring"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="26" fill="none" stroke="var(--track)" stroke-width="7"/><circle cx="32" cy="32" r="26" fill="none" stroke="var(--mc)" stroke-width="7" stroke-linecap="round" stroke-dasharray="150.3 163.36" transform="rotate(-90 32 32)"/></svg><b>181g</b>carbs</div><div class="ring"><svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="26" fill="none" stroke="var(--track)" stroke-width="7"/><circle cx="32" cy="32" r="26" fill="none" stroke="var(--mf)" stroke-width="7" stroke-linecap="round" stroke-dasharray="153.6 163.36" transform="rotate(-90 32 32)"/></svg><b>64g</b>fat</div></div>
-      <div class="meal"><div><small>Breakfast</small>Greek yogurt, berries &amp; granola</div><span class="kc">410</span></div>
-      <div class="meal"><div><small>Lunch</small>Chicken burrito bowl</div><span class="kc">620</span></div>
-      <div class="meal"><div><small>Snack</small>Protein shake &amp; banana</div><span class="kc">290</span></div>
-      <div class="meal"><div><small>Dinner</small>Salmon, rice &amp; greens</div><span class="kc">620</span></div>
+
+      <div class="stage" aria-label="A day in the Macro Intent app">
+        <div class="phone"><div class="screen">
+          <div class="sbar"><span>9:41</span><span>November</span></div>
+          <div class="strip">
+            <span>Mon<b>2</b></span><span>Tue<b>3</b></span><span>Wed<b>4</b></span><span class="on">Thu<b>5</b></span><span>Fri<b>6</b></span><span>Sat<b>7</b></span><span>Sun<b>8</b></span>
+          </div>
+          <div class="totals">
+            <div class="kc"><b>1,612</b><span>of 1,840 kcal</span><em>228 left</em></div>
+            <div class="bar"><i style="width:87%"></i></div>
+            <div class="macros">
+              <span>Protein<b>131g</b><i style="--w:94%;--c:var(--mp)"></i></span>
+              <span>Carbs<b>158g</b><i style="--w:86%;--c:var(--mc)"></i></span>
+              <span>Fat<b>52g</b><i style="--w:85%;--c:var(--mf)"></i></span>
+              <span>Fibre<b>24g</b><i style="--w:92%;--c:var(--mfib)"></i></span>
+            </div>
+          </div>
+          <div class="slot">Breakfast</div>
+          <div class="food"><span class="fi" style="background:#E3EAFB">🥣</span><div>Morning protein oats<small>420 kcal · P 38 · C 36 · F 14</small></div><span class="amt">1 bowl</span></div>
+          <div class="slot">Lunch</div>
+          <div class="food"><span class="fi" style="background:#DDF1E5">🥗</span><div>Tofu, beet &amp; goat cheese salad<small>480 kcal · P 26 · C 31 · F 24</small></div><span class="amt">1 plate</span></div>
+          <div class="food"><span class="fi" style="background:#FBF0CF">🍌</span><div>Banana<small>105 kcal · P 1 · C 27 · F 0</small></div><span class="amt">1</span></div>
+          <div class="slot">Dinner</div>
+          <div class="food"><span class="fi" style="background:#FBE3DC">🍋</span><div>Lemon chicken orzo<small>509 kcal · P 42 · C 48 · F 14</small></div><span class="amt">1¼ cups</span></div>
+        </div></div>
+        <div class="float f1"><span class="dot" style="background:#E1F5EA">✓</span><div><b>On target</b><span>Protein, carbs and fat</span></div></div>
+        <div class="float f2"><span class="dot" style="background:var(--pin);color:var(--pin-ink)">P</span><div><b>2 new from Pinterest</b><span>Work lunches · ready to check</span></div></div>
+      </div>
+    </section>
+  </div>
+
+  <section id="log">
+    <div class="wrap">
+      <div class="sechead center">
+        <span class="kicker">Logging</span>
+        <h2>One button. Four ways to log.</h2>
+        <p>Tap + and pick the meal. However you'd rather tell it, the numbers come from real food data, never a guess.</p>
+      </div>
+      <div class="ways">
+        <div class="way"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 8a2 2 0 0 1 2-2h2l1.5-2h6L16.5 6h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2Z"/><circle cx="12" cy="12.5" r="3.5"/></svg></div>
+          <h3>Photo</h3><p>Snap the plate, or choose up to four from your library: the meal, the label, the side. You see what it found before anything is saved.</p></div>
+        <div class="way"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6.5a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0ZM5.5 11.5a6.5 6.5 0 0 0 13 0M12 18v3"/></svg></div>
+          <h3>Say it</h3><p>“Two eggs, toast and a flat white.” It turns into foods and amounts, fitted to your day.</p></div>
+        <div class="way"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6"/><path d="M15 15l5 5"/></svg></div>
+          <h3>Search</h3><p>Your recent foods first, then your own, every USDA ingredient and the brands you buy. Add several, save once.</p></div>
+        <div class="way"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 5.5h15v10h-9l-4.5 4v-4h-1.5Z"/></svg></div>
+          <h3>Ask</h3><p>“What should dinner be to finish on protein?” The assistant suggests, you decide. It never changes your plan on its own.</p></div>
+      </div>
     </div>
   </section>
 
-  <section class="features" id="features">
-    <div class="feature"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h7"/><path d="M17 15l2 2 3-4"/></svg></div><h3>A week that adds up</h3><p>Pick your goal and how you like to eat. Every day is built to land inside your targets, with portions worked out by real arithmetic, not guesses.</p></div>
-    <div class="feature"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h3l2-3h6l2 3h3v12H4z"/><circle cx="12" cy="13" r="3.5"/></svg></div><h3>Log it your way</h3><p>Snap a photo, scan a barcode, or just say what you ate. The assistant fits it into your day and rebalances the rest.</p></div>
-    <div class="feature"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v16H5z"/><path d="M9 9h6M9 13h6M9 17h3"/></svg></div><h3>Shop and prep in one go</h3><p>The week becomes a grocery list sorted by aisle, and a prep plan that says what to cook, assemble or pull from the fridge each day.</p></div>
-    <div class="feature"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a7 7 0 0 0-7 7c0 5 7 11 7 11s7-6 7-11a7 7 0 0 0-7-7z"/><path d="M9 10l2 2 4-4"/></svg></div><h3>Your recipes, your foods</h3><p>Import a recipe from a link, add your own, or use the recipe bank. Tell it the milk and protein you buy and every recipe follows.</p></div>
-    <div class="feature"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h4l3-7 4 14 3-7h4"/></svg></div><h3>Insights, not lectures</h3><p>See when sugar runs high or a day comes up short, with a one-tap swap or a better dinner that fixes it.</p></div>
-    <div class="feature"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 3l-1 7h6l-7 11 1-8H6z"/></svg></div><h3>Moves with you</h3><p>Steps from Apple Health or Health Connect sit next to what you eat, so active days get the food they need.</p></div>
+  <section id="features" style="padding-top:24px">
+    <div class="wrap">
+      <div class="sechead">
+        <span class="kicker">Everything else</span>
+        <h2>A plan that adds up, all week.</h2>
+        <p>Macro Intent does the arithmetic so you can just cook and eat.</p>
+      </div>
+      <div class="grid">
+        <div class="feature"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h7"/><path d="M15 16l2 2 4-5"/></svg></div><h3>A week that hits your targets</h3><p>Each day is built from recipes you like and scaled to land inside your calories and macros, by a real solver rather than a guess.</p></div>
+        <div class="feature"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7h14l-1.5 11a2 2 0 0 1-2 1.7h-7a2 2 0 0 1-2-1.7Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg></div><h3>Grocery list and prep plan</h3><p>The week becomes a list sorted by aisle, scaled for your household, and a plan for what to cook, assemble or pull from the fridge.</p></div>
+        <div class="feature"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 5h6a2 2 0 0 1 2 2v12a1.5 1.5 0 0 0-1.5-1.5h-6.5ZM19.5 5h-5a2 2 0 0 0-2 2v12a1.5 1.5 0 0 1 1.5-1.5h5.5Z"/></svg></div><h3>Recipes from anywhere</h3><p>A link, a photo of a cookbook page, your Pinterest boards, or the recipe bank. Every ingredient matched to real nutrition data.</p></div>
+        <div class="feature"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h4l3-7 4 14 3-7h4"/></svg></div><h3>Insights, not lectures</h3><p>When sugar runs high or protein comes up short, you get a one-tap swap or a better dinner that fixes the day.</p></div>
+        <div class="feature"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 3l-1 7h6l-7 11 1-8H6z"/></svg></div><h3>Steps, workouts and sleep</h3><p>From Apple Health or Health Connect, with an Oura or Ultrahuman sleep score if you wear one. Active days get the food they need.</p></div>
+        <div class="feature"><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="9" cy="8" r="3.5"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18 14c2 .6 3 2.6 3 6"/></svg></div><h3>Bring your coach</h3><p>Share your week with a coach. They see your meals and progress, set your targets and leave notes on your days.</p></div>
+      </div>
+    </div>
   </section>
 
-  <section class="band">
-    <h2>Stop doing macro maths in your head.</h2>
-    <p>Free on the web today, with the same account on your phone when the apps launch.</p>
-    <a class="btn primary" href="https://app.macrointent.com">Open Macro Intent</a>
+  <section>
+    <div class="wrap spot">
+      <div>
+        <span class="kicker">New · Pinterest</span>
+        <h2>Pin it on Friday. Eat it on Monday.</h2>
+        <p>Connect Pinterest and give each board a meal: “Work lunches” for lunch, “Breakfast ideas” for breakfast. New pins come in as recipes with real nutrition, ready to plan.</p>
+        <ul>
+          <li>Reads the recipe from the pin’s page, its description, or the recipe written on the picture</li>
+          <li>Each one waits for your ✓, or turn on auto-add and they go straight in</li>
+          <li>Change the meal type, edit amounts or reject, right from the card</li>
+        </ul>
+      </div>
+      <div class="art" aria-label="A recipe brought in from Pinterest">
+        <div class="boards">
+          <div class="board"><b>Work lunches</b><small>Lunch · synced 12 min ago</small></div>
+          <div class="board"><b>Healthy breakfast</b><small>Breakfast</small></div>
+          <div class="board"><b>Snacks</b><small>Snack</small></div>
+        </div>
+        <div class="pincard">
+          <div class="pic" style="background:linear-gradient(135deg,#F4D9C6,#E8C2A8)"><span class="tag">Pinterest · Work lunches</span></div>
+          <div class="bd">
+            <b class="t">Lemon chicken orzo</b>
+            <div class="legend"><span><b>509</b> kcal</span><span><i style="background:var(--mp)"></i>P <b>42g</b></span><span><i style="background:var(--mc)"></i>C <b>48g</b></span><span><i style="background:var(--mf)"></i>F <b>14g</b></span></div>
+            <div class="acts"><span class="sel">Lunch ▾</span><span class="ib ok">✓</span><span class="ib">✎</span><span class="ib" style="color:#A8455F">✕</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
+
+  <section>
+    <div class="wrap spot flip">
+      <div>
+        <span class="kicker">Coaching</span>
+        <h2>Your coach, in the loop.</h2>
+        <p>Coaches add clients by email; clients accept in the app. Then every client’s week is a glance away, and a note on a day reaches them straight away.</p>
+        <ul>
+          <li>Each client’s last seven days at a glance: on target, off, or no food</li>
+          <li>Their meals, weigh-ins, steps, workouts and sleep, read-only</li>
+          <li>Coaches can set targets and leave notes on days, nothing else</li>
+        </ul>
+      </div>
+      <div class="art" aria-label="A client's week in Coaching">
+        <div class="client">
+          <div class="who"><span class="av" style="background:#E3EAFB;color:#3C5A9A">JR</span><div><b>Jordan Reyes</b><span>Client since Oct 12</span></div></div>
+          <div class="week"><span><i class="on"></i>M</span><span><i class="on"></i>T</span><span><i class="off"></i>W</span><span><i class="on"></i>T</span><span><i class="on"></i>F</span><span><i></i>S</span><span><i></i>S</span></div>
+          <div class="stats"><div>On target<b>4 of 5</b></div><div>Avg calories<b>1,840</b></div><div>Weight<b>−0.4 kg</b></div></div>
+        </div>
+        <div class="client">
+          <div class="note"><small>Coach’s note · Tue, Nov 3</small>Great protein yesterday. Keep the snacks a little lighter.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="new">
+    <div class="wrap">
+      <div class="sechead">
+        <span class="kicker">What’s new</span>
+        <h2>Fresh this autumn.</h2>
+        <p>We ship often. Here’s what’s landed lately.</p>
+      </div>
+      <div class="news">
+        <div class="item"><span class="when">Nov</span><div><h3>Pinterest boards → recipes</h3><p>Give each board a meal type; new pins arrive as recipes with real macros, waiting for your ✓ or added automatically.</p></div></div>
+        <div class="item"><span class="when">Nov</span><div><h3>One + to add anything</h3><p>A single Add sheet: meal type, photo, voice, recipe or ask, with your recent foods right there.</p></div></div>
+        <div class="item"><span class="when">Nov</span><div><h3>Several photos at once</h3><p>Choose up to four from your library, or take them, and log the whole meal in one go. On the web too.</p></div></div>
+        <div class="item"><span class="when">Nov</span><div><h3>Coaching, redesigned</h3><p>Client cards with the week at a glance, and a My coach card with their latest note and what they can see.</p></div></div>
+        <div class="item"><span class="when">Nov</span><div><h3>A fresh look</h3><p>Softer lilac, warm slate, new type and food cards with every food’s numbers. Faster recipe lists, too.</p></div></div>
+        <div class="item"><span class="when">Oct</span><div><h3>Sleep and rings</h3><p>Last night’s sleep on each day, from your phone’s health app, Oura or Ultrahuman.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <section class="band" style="padding:56px 28px">
+      <h2>Stop doing macro maths in your head.</h2>
+      <p>Free on the web today. The same account works on your phone when the apps launch.</p>
+      <a class="btn" href="https://app.macrointent.com">Open Macro Intent</a>
+    </section>
+  </div>
 </main>
+
 <footer>
   <div class="wrap">
-    <span>© 2026 Macro Intent</span>
-    <nav><a href="/privacy">Privacy policy</a><a href="/delete-account">Delete your account</a><a href="mailto:macrointent@gmail.com">macrointent@gmail.com</a></nav>
+    <a class="wordmark" href="/" aria-label="Macro Intent"><span class="bw">macro</span><span class="bi">intent<svg viewBox="0 0 100 8" preserveAspectRatio="none" aria-hidden="true"><path d="M3 5.5 Q50 1 97 5.5"/></svg></span></a>
+    <nav><a href="/privacy">Privacy policy</a><a href="/delete-account">Delete your account</a><a href="mailto:macrointent@gmail.com">macrointent@gmail.com</a><span>© 2026 Macro Intent</span></nav>
   </div>
 </footer>
 </body>
