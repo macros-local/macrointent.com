@@ -5,21 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy policy · Macro Intent</title>
 <meta name="description" content="How Macro Intent handles your data.">
-<link rel="icon" type="image/svg+xml" href="/brand/logo.svg">
-<link rel="apple-touch-icon" href="/brand/logo.png">
+<link rel="icon" type="image/png" href="/brand/favicon-64.png">
+<link rel="apple-touch-icon" href="/brand/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Outfit:wght@300;400;500;600;700&display=swap">
 <link rel="stylesheet" href="/site.css">
 </head>
 <body>
 <header class="wrap top">
-  <a class="brand" href="/"><img src="/brand/logo.svg" alt="">Macro Intent</a>
-  <nav><a href="/#features">Features</a><a href="/privacy">Privacy</a><a class="btn primary" href="https://app.macrointent.com">Open the app</a></nav>
+  <a class="wordmark" href="/" aria-label="Macro Intent"><span class="bw">macro</span><span class="bi">intent<svg viewBox="0 0 100 8" preserveAspectRatio="none" aria-hidden="true"><path d="M3 5.5 Q50 1 97 5.5"/></svg></span></a>
+  <nav><a href="/#features">Features</a><a href="/#new">What’s new</a><a class="btn primary" href="https://app.macrointent.com">Open the app</a></nav>
 </header>
 <main class="doc">
 <h1>Privacy policy</h1>
-<p class="date">Effective 11 October 2026</p>
+<p class="date">Effective 7 November 2026</p>
 
 <p>Macro Intent plans meals against the calorie and macro targets you set, on the web at
 app.macrointent.com and in the iOS and Android apps. This page says what we keep, why, who
@@ -36,14 +36,36 @@ across other apps and websites.</p>
 <tr><td>Your conversation with the assistant</td><td>So it can carry on a conversation; kept until you start a new chat</td></tr>
 </table></div>
 
-<h2>What stays on your phone</h2>
+<h2>Activity and sleep</h2>
 <ul>
-<li><b>Steps</b> from Apple Health or Health Connect are read only if you allow it, and only
-step counts. Today’s count is sent with a request so tips can account for it; we don’t store
-it. We never write to Apple Health or Health Connect, and health data is never used for
-advertising or shared with anyone.</li>
-<li><b>Voice</b>: when you speak to the assistant, your phone’s own speech recognition (from
-Apple or Google) turns it into text. We receive only the text.</li>
+<li><b>Steps, workouts and sleep</b> from Apple Health or Health Connect are read only if you allow it.
+The app keeps the last two weeks’ step counts, the workouts you count, and each night’s hours and sleep
+stages on our servers, so they show on your days, in your reports and to a coach you’ve accepted.
+Edits you make to steps or workouts stay on your phone. We never write to Apple Health or Health
+Connect, and health data is never used for advertising or shared with anyone else.</li>
+<li><b>Oura and Ultrahuman</b>: if you connect a ring, we keep the sign-in it gives us and read your
+nightly sleep score. The sign-in stays on our servers and is never sent to the app. Disconnect it in
+Settings → Sleep at any time.</li>
+</ul>
+
+<h2>Pinterest</h2>
+<p>If you connect Pinterest, we keep the sign-in Pinterest gives us (on our servers only), the boards
+you choose and the meal type you give each, and which pins we’ve already read. We read only those
+boards’ pins, never post or change anything on Pinterest, and turn each new pin into a recipe of yours.
+To read a pin we open the page it links to, and may send its description or picture to Anthropic (below)
+to read the recipe written there. Disconnect in Customize → Pinterest; the recipes already brought in stay
+until you delete them.</p>
+
+<h2>Coaching</h2>
+<p>If you accept a coach, they can see your meals, totals, targets, weigh-ins, steps, workouts and sleep,
+read-only; they can change your targets and leave notes on your days, and nothing else. They see your name
+and email, and you see theirs. Either of you can end it at any time in Coaching. We keep notices in the
+app (a coach asking to connect, a note, new Pinterest recipes) until you delete your account.</p>
+
+<h2>What stays on your device</h2>
+<ul>
+<li><b>Voice</b>: when you speak to the assistant, your phone’s or browser’s own speech recognition (from
+Apple, Google or your browser’s maker) turns it into text. We receive only the text.</li>
 <li><b>Barcodes</b> are read by the camera on your phone. Only the barcode number is sent, to look up the food.</li>
 </ul>
 
@@ -60,15 +82,16 @@ worked out by our own code, not the AI.</p>
 <li><b>Auth0</b> (Okta): sign-in</li>
 <li><b>MongoDB Atlas</b>: our database</li>
 <li><b>Amazon Web Services</b>: hosting</li>
-<li><b>Anthropic</b>: the assistant, when you use it</li>
+<li><b>Anthropic</b>: the assistant, when you use it, and reading recipes from pins you choose</li>
+<li><b>Pinterest</b>, <b>Oura</b>, <b>Ultrahuman</b>: only if you connect them, to read the boards or sleep scores you ask for</li>
 <li><b>Open Food Facts</b>: food and barcode lookups. These lookups contain the search or barcode only, nothing about you.</li>
 </ul>
 <p>We share data with no one else, except where the law requires it.</p>
 
 <h2>Keeping and deleting it</h2>
 <p>We keep your data until you delete your account. You can delete it at any time in the app
-(More → Delete account) or on the web (Settings → Delete account). That removes your plans,
-recipes, foods, photos, settings, assistant conversation and sign-in from our systems straight
+(You → Settings → Delete account) or on the web (Settings → Delete account). That removes your plans,
+recipes, foods, photos, settings, activity and sleep, connections, coaching links, assistant conversation and sign-in from our systems straight
 away. <a href="/delete-account">More on deleting your account</a>.</p>
 
 <h2>Your rights</h2>
@@ -89,8 +112,8 @@ to access, correct, move or delete your data, which we will honour.</p>
 </main>
 <footer>
   <div class="wrap">
-    <span>© 2026 Macro Intent</span>
-    <nav><a href="/privacy">Privacy policy</a><a href="/delete-account">Delete your account</a><a href="mailto:macrointent@gmail.com">macrointent@gmail.com</a></nav>
+    <a class="wordmark" href="/" aria-label="Macro Intent"><span class="bw">macro</span><span class="bi">intent<svg viewBox="0 0 100 8" preserveAspectRatio="none" aria-hidden="true"><path d="M3 5.5 Q50 1 97 5.5"/></svg></span></a>
+    <nav><a href="/privacy">Privacy policy</a><a href="/delete-account">Delete your account</a><a href="mailto:macrointent@gmail.com">macrointent@gmail.com</a><span>© 2026 Macro Intent</span></nav>
   </div>
 </footer>
 </body>
